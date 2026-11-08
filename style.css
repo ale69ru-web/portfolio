@@ -24,10 +24,9 @@ h2{font-size:clamp(36px,5vw,63px);margin-bottom:15px}h3{font-size:clamp(25px,3.1
 .visual img{width:auto;max-width:100%;max-height:100%;object-fit:contain;border:1px solid #31262022}
 .card .visual{height:114px;padding:8px}.card .visual:not(.mobile) img{width:100%;height:100%;object-fit:cover;object-position:top}
 .visual.mobile img{max-width:calc(50% - 8px);height:100%}
-.fishing{background:#eee5df;color:var(--accent);position:relative;isolation:isolate;min-height:100px}.fishing svg{position:absolute;width:100%;height:100%;inset:0;z-index:-1;opacity:.58}.fishing span{font:italic clamp(20px,3vw,43px)/1 var(--serif);text-align:center}
 .case{padding:42px 0 46px}.back{display:inline-block;margin-bottom:23px}.case h1,.case h2{margin-bottom:12px}
 .case-intro{display:flex;justify-content:space-between;align-items:start;gap:20px;margin-bottom:21px}.case-intro .lead{margin:0}.case-intro .btn{white-space:nowrap}
-.case figure{margin:0 0 25px}.case .visual{height:clamp(200px,49vw,510px)}.case .visual.fishing{height:clamp(180px,30vw,300px)}
+.case figure{margin:0 0 25px}.case .visual{height:clamp(200px,49vw,510px)}
 figcaption{font-size:12px;padding-top:8px;color:var(--mute)}
 .details{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}.detail{border-top:1px solid var(--line);padding-top:14px}.detail h3{font-size:27px}.detail p{color:var(--mute);margin-bottom:0}
 .case-nav{justify-content:space-between;margin-top:25px;border-top:1px solid var(--line);padding-top:13px}
@@ -38,7 +37,7 @@ footer{border:0;border-top:1px solid var(--line);font-size:13px;color:var(--mute
  .hero{grid-template-columns:1fr;padding:40px 0 32px;gap:23px}.hero h1{margin-bottom:15px}.portrait{width:min(100%,340px)}.portrait img{aspect-ratio:1.05}
  .about,.details{grid-template-columns:1fr}.about{padding-bottom:28px;gap:7px}
  .card{grid-template-columns:23px minmax(0,1fr) minmax(68px,24%) 10px;gap:6px}.card .visual{height:73px;padding:3px}.card h3{font-size:23px}.card p{font-size:13px}.card .meta,.number{font-size:10px}.card .arrow{font-size:14px}.card .visual.mobile img{max-width:50%}
- .card .fishing span{font-size:14px}.case-intro{flex-direction:column;gap:12px}.case{padding:30px 0}.case .visual{padding:9px}
+ .case-intro{flex-direction:column;gap:12px}.case{padding:30px 0}.case .visual{padding:9px}
 }
 @media print{
  @page{size:A4;margin:16mm}*{-webkit-print-color-adjust:exact;print-color-adjust:exact}
@@ -48,7 +47,9 @@ footer{border:0;border-top:1px solid var(--line);font-size:13px;color:var(--mute
  .section-top{padding:3mm 0}.section-top h2{font-size:26pt}.group{margin-bottom:3mm}.group-title{padding:2mm 0;font-size:9pt}
  .card{grid-template-columns:9mm 1fr;gap:2mm;padding:1.4mm 0}.card h3{font-size:13pt;margin:0}.card p{font-size:9pt}.card .meta{font-size:8pt;margin:0}.card .visual,.card .arrow{display:none}
  .offline .case{break-before:page;border:0;padding:3mm 0}.case h2{font-size:37pt}.case-intro{display:block;margin-bottom:3mm}.case-intro .btn{display:inline-block;min-height:0;border:0;padding:0;margin-top:2mm;text-decoration:underline}
- .case figure{margin-bottom:4mm}.case .visual{height:105mm;padding:5mm}.case .visual.fishing{height:63mm}
+ .case figure{margin-bottom:4mm}.case .visual{height:105mm;padding:5mm}
  .details{grid-template-columns:1fr 1fr}.detail h3{font-size:18pt}.label{margin-bottom:2mm}
 }
 @media(max-width:690px){.portrait img{object-position:50% 56%}} @media print{.portrait img{object-position:50% 48%}.card p{display:none}.card{break-inside:avoid}.hero h1{font-size:32pt}}
+
+@media screen and (max-width:690px){#fishing .visual{height:clamp(290px,94vw,425px)}}
